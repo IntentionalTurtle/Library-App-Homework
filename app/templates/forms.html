@@ -1,0 +1,29 @@
+<form method="POST">
+    {{ form.hidden_tag() }}
+    <div class="form-group">
+        <fieldset id="email-field">
+            {{ form.email.label }}
+            {{ form.email(class = 'form-control', placeholder = 'Enter email here ') }}
+        </fieldset>
+    </div>
+
+        <fieldset id="pass-field">
+            {{ form.password.label }}
+            {{ form.password(class = "form-control", placeholder = "Enter password here ") }}
+        </fieldset>
+
+        <fieldset id="first_name-field">
+            {{ form.first_name.label }}
+            {{ form.first_name(class = "form-control", placeholder = "Enter first name here ") }}
+        </fieldset>
+
+        <fieldset id="last_name-field">
+            {{ form.last_name.label }}
+            {{ form.last_name(class = "form-control", placeholder = "Enter last name here ") }}
+        </fieldset>
+
+
+        <!-- Submit button area -->
+        {{ form.submit_button(class = "btn btn-primary btn-block mt-2")}}
+
+</form>
