@@ -58,7 +58,7 @@ class Book(db.Model):
     author = db.Column(db.String(200), nullable = False)
     pub_year = db.Column(db.String(20), nullable = False)
     ISBN = db.Column(db.String(200))
-    in_inventory = db.Column(db.Boolean)
+    in_inventory = db.Column(db.String(10))
     hard_paper = db.Column(db.String(15))
     user_token = db.Column(db.String, db.ForeignKey('user.token'), nullable = False)
     

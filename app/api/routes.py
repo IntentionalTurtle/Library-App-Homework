@@ -17,7 +17,7 @@ def create_book(current_user_token):
 
     # print(f'BIG TESTER: {current_user_token.token}')
 
-    book = Book(title, author, pub_year, ISBN, hard_paper, in_inventory = True, user_token = user_token )
+    book = Book(title, author, pub_year, ISBN, in_inventory, hard_paper, user_token = user_token )
 
     db.session.add(book)
     db.session.commit()
